@@ -3,14 +3,14 @@ import { Dimensions } from "react-native";
 const { height, width } = Dimensions.get("window");
 
 const COLORS = {
-  primary: "#015668",
-  secondary: "#263F44",
-  tertiary: "#FFD369",
-  gray: "#909090", // Suggested texture color
+  primary: "#222831",
+  secondary: "#393E46",
+  tertiary: "#D65A31",
+  gray: "#D65A31", // Suggested texture color
   gray2: "#C0C0C0", // Suggested light shadow color
 
-  white: "#FFF1CF",
-  lightWhite: "#FFFFFF", // Suggested light color
+  white: "#EEEEEE",
+  lightWhite: "#EEEEEE", // Suggested light color
 };
 
 const SHADOWS = {

@@ -7,6 +7,10 @@ const styles = StyleSheet.create({
     padding: 24,
     backgroundColor: COLORS.primary,
   },
+  logo: {
+    alignItems: "center",
+    justifyContent: "center",
+  },
   header: {
     marginTop: 20,
     flexDirection: "row",
@@ -25,7 +29,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: "100%",
-    height: 300,
+    height: 250,
   },
 });
 
