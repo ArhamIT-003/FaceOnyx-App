@@ -49,8 +49,8 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 50,
-    fontWeight: "bold",
     color: COLORS.white,
+    fontFamily: "semiBold",
   },
   slugContainer: {
     marginVertical: 22,
@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
     color: COLORS.white,
     fontSize: 16,
     textTransform: "capitalize",
+    fontFamily: "regular",
   },
   btn: {
     width: 100,
@@ -69,10 +70,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   loginText: {
-    fontWeight: "bold",
     color: COLORS.white,
     fontSize: 16,
     textTransform: "capitalize",
+    fontFamily: "bold",
   },
 });
 

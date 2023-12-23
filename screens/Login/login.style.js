@@ -15,15 +15,16 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 22,
-    fontWeight: "bold",
     marginVertical: 11,
     color: COLORS.primary,
+    fontFamily: "bold",
     textTransform: "capitalize",
   },
   title: {
     fontSize: 14,
     color: COLORS.primary,
     textTransform: "capitalize",
+    fontFamily: "regular",
   },
   FieldContainer: {
     marginBottom: 12,
@@ -31,6 +32,7 @@ const styles = StyleSheet.create({
   TextField: {
     fontSize: 14,
     marginVertical: 8,
+    fontFamily: "semiBold",
   },
   inputFieldContainer: {
     width: "100%",
@@ -64,6 +66,7 @@ const styles = StyleSheet.create({
   anotherSignup: {
     fontSize: 14,
     color: COLORS.primary,
+    fontFamily: "regular",
   },
   FGWrapper: {
     flexDirection: "row",
@@ -89,6 +92,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: COLORS.primary,
     textTransform: "capitalize",
+    fontFamily: "regular",
   },
   loggedIn: {
     flexDirection: "row",
@@ -97,7 +101,7 @@ const styles = StyleSheet.create({
   },
   loginText: {
     color: COLORS.primary,
-    fontWeight: "bold",
+    fontFamily: "bold",
     fontSize: 14,
     textTransform: "capitalize",
   },

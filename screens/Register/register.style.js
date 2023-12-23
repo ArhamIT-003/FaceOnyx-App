@@ -15,20 +15,21 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 22,
-    fontWeight: "bold",
+    fontFamily: "bold",
     marginVertical: 11,
     color: COLORS.primary,
   },
   title: {
     fontSize: 14,
     color: COLORS.primary,
+    fontFamily: "regular",
   },
   FieldContainer: {
     marginBottom: 12,
   },
   TextField: {
-    fontSize: 14,
     marginVertical: 8,
+    fontFamily: "semiBold",
   },
   inputFieldContainer: {
     width: "100%",
@@ -70,10 +71,11 @@ const styles = StyleSheet.create({
   },
   CheckBox: {
     flexDirection: "row",
-    marginVertical: 6,
+    marginVertical: 8,
   },
   check: {
-    marginRight: 8,
+    marginRight: 10,
+    marginTop: 4,
   },
   OtherCredientialsWrapper: {
     flexDirection: "row",
@@ -89,6 +91,7 @@ const styles = StyleSheet.create({
   anotherSignup: {
     fontSize: 14,
     color: COLORS.primary,
+    fontFamily: "regular",
   },
   FGWrapper: {
     flexDirection: "row",
@@ -114,6 +117,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: COLORS.primary,
     textTransform: "capitalize",
+    fontFamily: "regular",
   },
   loggedIn: {
     flexDirection: "row",
@@ -122,7 +126,7 @@ const styles = StyleSheet.create({
   },
   loginText: {
     color: COLORS.primary,
-    fontWeight: "bold",
+    fontFamily: "bold",
     fontSize: 14,
     textTransform: "capitalize",
   },

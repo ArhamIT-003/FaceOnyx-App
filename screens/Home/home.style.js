@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   title: {
-    fontWeight: "bold",
+    fontFamily: "bold",
     fontSize: 24,
     color: COLORS.white,
     marginBottom: 8,
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   },
   subTitle: {
     color: COLORS.gray2,
-    fontWeight: "700",
+    fontFamily: "semiBold",
   },
   image: {
     width: "100%",

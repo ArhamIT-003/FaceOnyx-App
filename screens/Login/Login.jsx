@@ -86,7 +86,15 @@ const Login = () => {
               style={styles.FGImg}
               resizeMode="contain"
             />
-            <Text style={{ fontSize: 14, color: COLORS.white }}>Google</Text>
+            <Text
+              style={{
+                fontSize: 14,
+                color: COLORS.white,
+                fontFamily: "regular",
+              }}
+            >
+              Google
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.FGBtn}
@@ -97,7 +105,15 @@ const Login = () => {
               style={styles.FGImg}
               resizeMode="contain"
             />
-            <Text style={{ fontSize: 14, color: COLORS.white }}>Facebook</Text>
+            <Text
+              style={{
+                fontSize: 14,
+                color: COLORS.white,
+                fontFamily: "regular",
+              }}
+            >
+              Facebook
+            </Text>
           </TouchableOpacity>
         </View>
 

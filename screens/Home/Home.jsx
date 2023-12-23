@@ -20,7 +20,7 @@ const Home = () => {
           <Text style={styles.subTitle}>Authenticated</Text>
         </View>
 
-        <FontAwesome name="user-circle" size={30} color="black" />
+        <FontAwesome name="user-circle" size={30} color="gray" />
       </View>
       <Image source={car} style={styles.image} resizeMode="contain" />
 

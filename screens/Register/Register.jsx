@@ -87,7 +87,13 @@ const Register = () => {
             value={isChecked}
             onValueChange={setIsChecked}
           />
-          <Text>I agree to the terms and conditions</Text>
+          <Text
+            style={{
+              fontFamily: "semiBold",
+            }}
+          >
+            I agree to the terms and conditions
+          </Text>
         </View>
 
         <Button
@@ -112,7 +118,15 @@ const Register = () => {
               style={styles.FGImg}
               resizeMode="contain"
             />
-            <Text style={{ fontSize: 14, color: COLORS.white }}>Google</Text>
+            <Text
+              style={{
+                fontSize: 14,
+                color: COLORS.white,
+                fontFamily: "regular",
+              }}
+            >
+              Google
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.FGBtn}
@@ -123,7 +137,15 @@ const Register = () => {
               style={styles.FGImg}
               resizeMode="contain"
             />
-            <Text style={{ fontSize: 14, color: COLORS.white }}>Facebook</Text>
+            <Text
+              style={{
+                fontSize: 14,
+                color: COLORS.white,
+                fontFamily: "regular",
+              }}
+            >
+              Facebook
+            </Text>
           </TouchableOpacity>
         </View>
 

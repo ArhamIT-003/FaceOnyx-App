@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  btnTxt: { fontSize: 18 },
+  btnTxt: { fontSize: 18, fontFamily: "bold" },
 });
 
 export default Button;

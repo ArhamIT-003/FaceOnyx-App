@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   optionText: {
     color: COLORS.tertiary,
     fontSize: 18,
-    fontWeight: "bold",
+    fontFamily: "bold",
     marginLeft: 10,
   },
 });
