@@ -2,8 +2,8 @@ import { View, Text, SafeAreaView, Image, Pressable } from "react-native";
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import styles from "./welcome.style";
-import { COLORS } from "../constants/theme";
-import Button from "../components/welcome-btn/WelcomeBtn";
+import { COLORS } from "../../constants/theme";
+import Button from "../../components/welcome-btn/WelcomeBtn";
 import { useNavigation } from "@react-navigation/native";
 
 const Welcome = () => {
@@ -16,19 +16,19 @@ const Welcome = () => {
       <SafeAreaView style={styles.wrapper}>
         <View>
           <Image
-            source={require("../assets/hero1.jpg")}
+            source={require("../../assets/hero1.jpg")}
             style={styles.imgOne}
           />
           <Image
-            source={require("../assets/hero2.jpg")}
+            source={require("../../assets/hero2.jpg")}
             style={styles.imgTwo}
           />
           <Image
-            source={require("../assets/hero3.jpg")}
+            source={require("../../assets/hero3.jpg")}
             style={styles.imgThree}
           />
           <Image
-            source={require("../assets/hero2.jpg")}
+            source={require("../../assets/hero2.jpg")}
             style={styles.imgFour}
           />
         </View>

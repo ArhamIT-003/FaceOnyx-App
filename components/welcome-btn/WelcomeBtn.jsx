@@ -1,7 +1,7 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity } from "react-native";
 import React from "react";
-import styles from "./welcomebtn.style.js";
-import { COLORS } from "../../constants/theme.js";
+import { StyleSheet } from "react-native";
+import { COLORS } from "../../constants/theme";
 
 const Button = ({ title, onPress, color, filled, style }) => {
   const filledBgColor = color || COLORS.primary;
@@ -18,5 +18,18 @@ const Button = ({ title, onPress, color, filled, style }) => {
     </TouchableOpacity>
   );
 };
+
+const styles = StyleSheet.create({
+  button: {
+    paddingBottom: 16,
+    paddingVertical: 10,
+    borderColor: COLORS.primary,
+    borderWidth: 10,
+    borderRadius: 12,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  btnTxt: { fontSize: 18 },
+});
 
 export default Button;

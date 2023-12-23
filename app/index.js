@@ -1,8 +1,8 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import BottomNavigation from "../components/navigation/BottomNavigation";
-import Welcome from "../screens/Welcome";
-import { Login, Register } from "../screens";
+import Welcome from "../screens/Welcome/Welcome";
+import { Home, Login, Register } from "../screens";
 
 const Stack = createStackNavigator();
 
@@ -22,6 +22,11 @@ const App = () => {
       <Stack.Screen
         name="Register"
         component={Register}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Home"
+        component={Home}
         options={{ headerShown: false }}
       />
       {/* Uncomment the following line if you want to include BottomNavigation */}

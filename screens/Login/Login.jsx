@@ -7,28 +7,26 @@ import {
   Pressable,
 } from "react-native";
 import React, { useState } from "react";
-import styles from "./register.style.js";
+import styles from "./login.style.js";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { Ionicons } from "@expo/vector-icons";
-import Checkbox from "expo-checkbox";
-import Button from "../components/welcome-btn/WelcomeBtn.jsx";
-import { COLORS } from "../constants/theme.js";
+import Button from "../../components/welcome-btn/WelcomeBtn.jsx";
+import { COLORS } from "../../constants/theme.js";
 import { useNavigation } from "@react-navigation/native";
 
-const Register = () => {
+const Login = () => {
   const [isPasswordShown, setIsPasswordShown] = useState(true);
-  const [isChecked, setIsChecked] = useState(false);
-  const GoogleIcon = require("../assets/google.png");
-  const FacebookIcon = require("../assets/facebook.png");
+  const GoogleIcon = require("../../assets/google.png");
+  const FacebookIcon = require("../../assets/facebook.png");
   const navigation = useNavigation();
 
   return (
     <SafeAreaView style={styles.appWrapper}>
       <View style={styles.container}>
         <View style={styles.containerSpace}>
-          <Text style={styles.text}>Register</Text>
+          <Text style={styles.text}>Log-In</Text>
           <Text style={styles.title}>
-            Authorize your car today following signing up!
+            Login to experience a future security!
           </Text>
         </View>
 
@@ -39,22 +37,6 @@ const Register = () => {
               placeholder="Enter your email address"
               keyboardType="email-address"
               style={styles.inputField}
-            />
-          </View>
-        </View>
-
-        <View style={styles.FieldContainer}>
-          <Text style={styles.TextField}>Phone Number</Text>
-          <View style={styles.inputPhoneContainer}>
-            <TextInput
-              placeholder="+92"
-              keyboardType="numeric"
-              style={styles.phoneCode}
-            />
-            <TextInput
-              placeholder="Enter your phone number"
-              keyboardType="numeric"
-              style={styles.phoneInput}
             />
           </View>
         </View>
@@ -81,24 +63,16 @@ const Register = () => {
           </View>
         </View>
 
-        <View style={styles.CheckBox}>
-          <Checkbox
-            style={styles.check}
-            value={isChecked}
-            onValueChange={setIsChecked}
-          />
-          <Text>I agree to the terms and conditions</Text>
-        </View>
-
         <Button
-          title={"Sign up"}
+          title={"Sign-in"}
           filled
+          onPress={() => navigation.navigate("Home")}
           style={{ marginTop: 10, marginBottom: 8 }}
         />
 
         <View style={styles.OtherCredientialsWrapper}>
           <View style={styles.OtherCredientialsContainer} />
-          <Text style={styles.anotherSignup}>Or Signup with</Text>
+          <Text style={styles.anotherSignup}>Or Sign-in with</Text>
           <View style={styles.OtherCredientialsContainer} />
         </View>
 
@@ -128,9 +102,9 @@ const Register = () => {
         </View>
 
         <View style={styles.loggedIn}>
-          <Text style={styles.slugText}>Already have an account? </Text>
-          <Pressable onPress={() => navigation.navigate("Login")}>
-            <Text style={styles.loginText}>Login</Text>
+          <Text style={styles.slugText}>New to the app? </Text>
+          <Pressable onPress={() => navigation.navigate("Register")}>
+            <Text style={styles.loginText}>Register</Text>
           </Pressable>
         </View>
       </View>
@@ -138,4 +112,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;

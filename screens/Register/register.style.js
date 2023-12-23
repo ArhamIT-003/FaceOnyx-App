@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { COLORS, SIZES } from "../constants/theme";
+import { COLORS, SIZES } from "../../constants/theme";
 
 const styles = StyleSheet.create({
   appWrapper: {
@@ -18,12 +18,10 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginVertical: 11,
     color: COLORS.primary,
-    textTransform: "capitalize",
   },
   title: {
     fontSize: 14,
     color: COLORS.primary,
-    textTransform: "capitalize",
   },
   FieldContainer: {
     marginBottom: 12,
@@ -45,11 +43,38 @@ const styles = StyleSheet.create({
   inputField: {
     width: "100%",
   },
+  inputPhoneContainer: {
+    width: "100%",
+    height: 48,
+    borderColor: COLORS.primary,
+    borderWidth: 1,
+    borderRadius: 8,
+    alignItems: "center",
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  phoneCode: {
+    width: "12%",
+    marginLeft: 10,
+    borderRightWidth: 1,
+    borderLeftColor: COLORS.primary,
+    height: "100%",
+  },
+  phoneInput: {
+    width: "80%",
+    height: "100%",
+  },
   eyes: {
     position: "absolute",
     right: 12,
   },
-
+  CheckBox: {
+    flexDirection: "row",
+    marginVertical: 6,
+  },
+  check: {
+    marginRight: 8,
+  },
   OtherCredientialsWrapper: {
     flexDirection: "row",
     alignItems: "center",
