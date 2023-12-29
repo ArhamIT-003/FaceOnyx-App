@@ -9,7 +9,7 @@ const COLORS = {
   gray: "#D65A31", // Suggested texture color
   gray2: "#C0C0C0", // Suggested light shadow color
 
-  white: "#EEEEEE",
+  white: "#FFFFFF",
   lightWhite: "#EEEEEE", // Suggested light color
 };
 

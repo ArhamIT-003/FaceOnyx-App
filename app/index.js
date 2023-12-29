@@ -1,6 +1,6 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import Welcome from "../screens/Welcome/Welcome";
-import { Home, Login, Register } from "../screens";
+import { Home, Login, Profile, Register } from "../screens";
 import { useFonts } from "expo-font";
 import { useCallback } from "react";
 import * as SplashScreen from "expo-splash-screen";
@@ -47,6 +47,12 @@ const App = () => {
       <Stack.Screen
         name="Home"
         component={Home}
+        options={{ headerShown: false }}
+      />
+
+      <Stack.Screen
+        name="Profile"
+        component={Profile}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>
