@@ -12,8 +12,29 @@ const styles = StyleSheet.create({
     gap: 20,
   },
   header: {
+    flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
+  },
+  mainHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  mainTitle: {
+    color: COLORS.white,
+    fontSize: 16,
+    fontFamily: "semiBold",
+  },
+  mainBtn: {
+    backgroundColor: COLORS.tertiary,
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderRadius: 8,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 8,
   },
 });
 
